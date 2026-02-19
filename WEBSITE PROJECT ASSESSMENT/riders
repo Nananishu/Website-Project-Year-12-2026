@@ -9,7 +9,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<body class="content">
+    <h1>Riders of MotoGP</h1>
+    <p>MotoGP has been home to some of the most talented and daring riders in the history of motorcycle racing. These riders have not only showcased their incredible skills on the track but have also become icons in the world of motorsports. From legends like Valentino Rossi, who has won multiple world championships and is known for his charismatic personality, to current stars like Marc Marquez, who has dominated the sport with his aggressive riding style, MotoGP riders are celebrated for their bravery, dedication, and passion for racing. Each rider brings their unique flair to the sport, making MotoGP a thrilling spectacle for fans around the globe.</p>
 <body>
     <div class="Riders"></div>
-    <div class=
+    <div class="card">
+        <img src="Images\Marc Marquez.jpg" alt="Marc Marquez">
+        <h1>Marc Marquez</h1>
+        <p>Marc Marquez is a Spanish professional motorcycle road racer who has won multiple MotoGP World Championships. Known for his aggressive riding style and exceptional skill, Marquez has become one of the most successful riders in the history of the sport.</p>
+</div>
+</body>
     
