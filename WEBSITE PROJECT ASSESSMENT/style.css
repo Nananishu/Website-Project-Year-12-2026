@@ -1,5 +1,5 @@
 
-body{
+.Homepage {
    margin: 30px;
    min-height: 100vh;
    background: linear-gradient(rgb(0, 0, 0), rgb(65, 32, 32));
@@ -102,7 +102,7 @@ a:hover::after{
   border-collapse: collapse;
  } */
 
- h1{
+ .Homepage h1 {
  background: url(images/Imageone.jpg);
  
  -webkit-background-clip: text;
@@ -116,7 +116,7 @@ a:hover::after{
    top:4rem;
 }
 
-h2 {
+.Homepage h2 {
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    font-style: italic;
    color: rgb(255, 255, 255);
@@ -127,7 +127,7 @@ h2 {
    position: relative;
    text-shadow: 0 0 10px rgb(227, 2, 2);
 }
-h3 {
+.Homepage h3 {
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    color: rgb(213, 219, 214);
    text-align: center;
@@ -138,10 +138,27 @@ h3 {
    margin-right: min(10px, 20%);
    margin-right: max(0, 10%);
 }
-img {
+.Homepage .line {
    display: block;
    width: min(100em,100%);
    height: min (100em,10%);
    margin: 80px auto;
-   border-radius: 10px;}
+   border-radius: 10px;
+}
 
+.Riders{
+   perspective: 3000px;
+}
+
+.card{
+   width: 300px;
+   height: 400px;
+   transform-style: preserve-3d;
+   transition: transform 0.8s ease-in-out;
+   cursor:pointer;
+   border:1px solid rgb(255, 255, 255);
+   box-shadow: 5px 5px 5px rgb(255, 255, 255);
+   border-radius: 15px;
+}
+
+.
