@@ -30,7 +30,7 @@ body{
 .navbar {
    margin-top:0%;
    background: rgba(108, 108, 108, 0.353);
-   backdrop-filter: blur(20px);
+   backdrop-filter: blur(30px);
    padding:1px;
    position:fixed;
    width:80%;
@@ -144,11 +144,4 @@ img {
    height: min (100em,10%);
    margin: 80px auto;
    border-radius: 10px;}
-
-.img:hover{
-   anim
-   display:block;
-    width: min(100em,100%);
-   height: min (100em,10%);
-}
 
