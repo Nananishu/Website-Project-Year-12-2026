@@ -1,212 +1,187 @@
-.Homepage{
-   background: url(images/redgradient.jpg);
-   background-size: cover;
-   min-height: 150vh;
-   margin:30px;
+.Homepage {
+  background: url(images/background-red.jpg);
+  min-height: 150vh;
+  margin: 30px
 }
-
-.title{
-   font-family: 'Franklin Gothic Medium';
-   font-size:30px;
-   position:;
-   color:white;
-   text-align: center;
-   position: relative;
-
+.Homepage,
+.Riders,
+.title {
+  background-size: cover
 }
-
-
-.Riders{
-   background: url(images/redgradient.jpg);
-   background-size: cover;
-   min-height: 150vh;
-   font-family: Arial,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   margin: 30px;
+.title {
+  background: url("images/MOTOGP (1).jpg");
+  background-clip: text;
+  background-position-y: -70px;
+  color: transparent;
+  font-size: clamp(5rem, 18vw, 15rem);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  position: relative;
+  top: 6rem
 }
-
+.Riders {
+  background: url(images/background-red.jpg);
+  min-height: 150vh;
+  font-family: Arial, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: 30px
+}
 .navbar {
-   margin-top:0%;
-   background: rgba(108, 108, 108, 0.353);
-   backdrop-filter: blur(30px);
-   padding:1px;
-   position:fixed;
-   width:80%;
-   left:50%;
-   transform:translateX(-50%);
-   top:2rem;
-   border-radius: 30px;
-   border: 1px solid rgba(214, 214, 214, 0.5);
-   box-shadow:0 6px 6px rgba(0, 0, 0, 0.566);
+  margin-top: 0;
+  background: rgba(108, 108, 108, .353);
+  backdrop-filter: blur(30px);
+  padding: 1px;
+  position: fixed;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 2rem;
+  border-radius: 30px;
+  border: 1px solid rgba(214, 214, 214, .5);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, .566)
 }
-
 ul {
-      list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly
 }
-
 .nav ul li {
-   display:inline;
+  display: inline
 }
-
+.header,
+.under-header,
 a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: clamp(0.8rem, 1.5vw, 1.6rem);
-    font-weight: 300;
-    position: relative;
-    padding: 5px;
-    transition: color 0.3s ease;
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  position: relative
 }
-
-a::after{
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: rgb(255, 241, 241);
-    box-shadow: 0 0 10px rgb(206, 57, 57);
-    bottom:0;
-    left: 50%;
-    transition: all 0.5s ease;
+a {
+  text-decoration: none;
+  font-size: clamp(1rem, 1.5vw, 1.8rem);
+  font-weight: 300;
+  padding: 5px;
+  transition: color .3s ease
 }
-
-a:hover::after{
-    width: 100%;
-    left: 0;
+a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  box-shadow: 0 0 10px #ce3939;
+  bottom: 0;
+  left: 50%;
+  transition: all .5s ease;
+  background: #fff1f1
 }
-
-.header{
-   /* background: url(images/MOTOO.jpg);
- 
- -webkit-background-clip: text;
- background-clip:text;
- background-size:contain;
-   color: transparent; */
-
-   color: rgb(255, 255, 255);
-   font-size: clamp(5rem, 10vw,12rem);
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   text-align: center;
-   position: relative;
-   top:4rem;
+a:hover::after {
+  width: 100%;
+  left: 0
 }
-
-.under-header{
-      color: rgb(255, 255, 255);
-   font-size: clamp(2rem, 2vw,2rem);
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   text-align: center;
-   position: relative;
-   top:-4rem;  
-    background: rgba(255, 255, 255, 0.244);
-   backdrop-filter: blur(30px);
-   border-radius: 20px;
-   padding:5px;
-    width:50%;
-   left:50%;
-   transform:translateX(-50%);
+.header,
+.under-header {
+  font-size: clamp(5rem, 10vw, 12rem);
+  text-align: center;
+  top: 4rem
 }
-
-.under-header:hover{
-    box-shadow: 0 0 10px rgb(54, 3, 3); 
+.under-header {
+  font-size: clamp(2rem, 2vw, 2rem);
+  top: -4rem;
+  background: rgba(255, 255, 255, .244);
+  backdrop-filter: blur(30px);
+  border-radius: 20px;
+  padding: 5px;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%)
 }
-
-.card{
-   width: 300px;
-   height: 450px;
-   transform-style: preserve-3d;
-   transition: transform 0.8s ease-in-out;
-   cursor:pointer;
-   border-radius: 15px;
-   align-self: center;
-   margin: 80px;
+.under-header:hover {
+  box-shadow: 0 0 10px #360303
 }
-
-.card:hover{
-   transform: rotateY(180deg);
+.card {
+  width: 300px;
+  height: 450px;
+  transform-style: preserve-3d;
+  transition: transform .8s ease-in-out;
+  cursor: pointer;
+  border-radius: 15px;
+  align-self: center;
+  margin: 80px
 }
-
-.front-page,
-.back-page{
-   position: absolute;
-   width: 120%;
-   height: 120%;
-   backface-visibility: hidden;
-   border-radius: 15px;
+.card:hover {
+  transform: rotateY(180deg)
 }
-
-.front-page{
-   background-image: url(images/marc.jpg);
-   background-size: cover;
+.back-page,
+.front-page {
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  backface-visibility: hidden;
+  border-radius: 15px
 }
-
-.card-info{
-   position: absolute;
-   bottom: 50px;
-   left: 45px;
-   color: rgb(255, 255, 255);
-   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.47);
-   text-align: center;
+.front-page {
+  background-image: url(images/marc.jpg);
+  background-size: cover
 }
-
-.card-title{
-   font-size: 2.5rem;
-   font-weight: bold;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   margin-bottom: -20px;
-   text-shadow: 0 0 10px rgba(0, 0, 0, 0.966);
+.card-info {
+  position: absolute;
+  bottom: 50px;
+  left: 45px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .47);
+  text-align: center
 }
-
-.card-subtitle{
-   font-size: 1rem;
-   margin-bottom: -30px;
-   color: rgb(184, 215, 216);
-   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   font-weight: bold;
-   padding:2px;
-   text-shadow: 0 0 10px rgba(0, 0, 0, 0.966);
+.card-title,
+.inside-card h3 {
+  font-weight: 700;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif
 }
-
-.back-page{
-   background-color: rgb(91, 20, 10);
-   color: rgb(184, 184, 184);
-   align-items: center;
-   justify-content: center;
-   transform: rotateY(180deg);
-   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+.card-subtitle,
+.card-title {
+  text-shadow: 0 0 10px rgba(0, 0, 0, .966)
 }
-
-.inside-card{
-   text-align: center;
-   padding: 20px;
-   max-width: 300px;
+.card-title {
+  font-size: 2.5rem;
+  margin-bottom: -20px
 }
-
-.inside-card h3{
-   font-size: 3rem;
-   font-weight: bold;;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   text-shadow: 0 0 10px rgb(57, 4, 4);  
+.card-subtitle {
+  font-size: 1rem;
+  margin-bottom: -30px;
+  color: #b8d7d8;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  padding: 2px
 }
-
-.inside-card p{
-   font-size: 1rem;
+.back-page {
+  color: #b8b8b8;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .5);
+  background: #5b140a
+}
+.inside-card {
+  text-align: center;
+  padding: 20px;
+  max-width: 300px
+}
+.inside-card h3 {
+  font-size: 3rem;
+  text-shadow: 0 0 10px #390404
+}
+.inside-card p {
+  font-size: 1rem;
   position: center;
-   color: rgb(255, 255, 255);
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif
 }
-
-.card-button{
-   display: inline-block;
-   padding: 10px 20px;
-   background-color: rgb(220, 223, 225);
-   color: rgb(0, 0, 0);
-   font-weight: bold;
-   border: none;
-   border-radius: 5px;
-   cursor: pointer;
-   margin-top: 20px;
-   transition: background-color 0.3s ease;
+.card-button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #000;
+  font-weight: 700;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color .3s ease;
+  background: #dcdfe1
 }
