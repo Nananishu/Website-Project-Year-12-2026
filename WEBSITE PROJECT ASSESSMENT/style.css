@@ -40,6 +40,16 @@
 
 } 
 
+.read-more-btn{
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 18px;
+  background-color: #000000;
+  font: 1.3rem #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
 .description-1{
   color: rgb(224, 224, 224);
   font-size: 13px;
