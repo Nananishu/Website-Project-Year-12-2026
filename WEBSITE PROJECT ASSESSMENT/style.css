@@ -1,37 +1,59 @@
 .Homepage {
-  background: url(images/background-red.jpg);
-  min-height: 150vh;
-  margin: 10px
+    min-height: 100vh;
+    margin: 30px;
+    margin-top: 110px;
+    background-color: #000000;
 }
-.Homepage,
-.Riders,
-.title {
-  background-size: cover
+
+.Homepage-banner {
+    height: 700px;
+    background: url(images/motogpp2.jpg) no-repeat center center / cover;
+    border-radius: 20px;
 }
-.title {
-  background: url("images/MOTOGP (1).jpg");
-  background-clip: text;
-  background-position-y: -70px;
-  color: transparent;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+.banner-text {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center; /* use this */
   text-align: center;
-  position: relative;
-  font-size: clamp(5rem, 15vw, 18rem);
-  top: 1rem
+  gap: 0
 }
 
 .title {
-	animation: 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  background-position-y: -70px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px #000;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: clamp(6rem, 16vw, 18rem);
+  margin:relative
 }
 
 .second-title{
-   font-family: 'Gill sans';
-   color: #fff;
-   text-align: center;
-   animation:slide-top 1s cubic-bezier(.55,.085,.68,.53);
-   padding:3px;
-   background:#ce3939;
-   border-radius: 30px;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-style: italic;
+   color: #ffdd00;
+    text-shadow: 0 0 10px #000;
+    font-size: clamp(2rem, 4vw, 4rem);
+    margin:0;
+    margin-top:-12rem;
+
+} 
+
+.description-1{
+  color: rgb(156, 156, 156);
+  font-family:Arial, Helvetica, sans-serif;
+  margin:60px;
+  position:relative;
+  top: clamp(6rem,1rem,2rem)
+}
+.description-1{
+height:320px;
+width:400px;
+background-color: #ffffff;
+padding:20px;
+margin:30px;
+border-radius: 20px;
 }
 .Riders {
   background: url(images/background-red.jpg);
@@ -41,7 +63,7 @@
 }
 .navbar {
   margin-top: 0;
-  background: rgba(108, 108, 108, .353);
+  background-color: rgba(96, 96, 96, 0.293);
   backdrop-filter: blur(30px);
   padding: 1px;
   position: fixed;
