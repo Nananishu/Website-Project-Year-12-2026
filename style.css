@@ -1,0 +1,64 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+nav{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    min-height:8vh;
+    background-color:rgba(49, 61, 63, 0.799);
+}
+
+.logo{
+    font-family: "Black Ops One", system-ui;
+    font-size:20px;
+    color:white;
+    letter-spacing: 3px;
+}
+
+.nav-links{
+    display:flex;
+    width:50%;
+    justify-content:space-around;
+}
+
+.nav-links li{
+    list-style:none;
+    /* Gets rid of the bullet points in front of the links. */
+}
+
+.nav-links a{
+    font-family: "Poppins", sans-serif;
+    color:azure;
+    text-decoration:none;
+    letter-spacing:2px;
+    font-weight: 450;
+}
+
+.burger{
+    display:none;        
+    /* This makes the burger icon invisble when the screen size is at its max as the navigation links/buttons will be shown on the top. */
+}
+
+.burger div{
+    width:25px;
+    height:3px;
+    background-color: azure;
+    margin:5px;
+}
+
+
+@media screen and (max-width:1024px){
+    .nav-links{
+    width:50%;
+}}
+
+
+
+@media screen and (max-width:768px){
+body{
+    display:none
+}}
