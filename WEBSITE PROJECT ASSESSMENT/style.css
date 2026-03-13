@@ -179,7 +179,7 @@ body {
   border-color: var(--red);
 }
 
-.band-num {
+.band-number {
   display: block;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 3rem;
