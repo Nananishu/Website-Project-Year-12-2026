@@ -10,7 +10,6 @@
   --yellow: #F5C400;
   --dark: #111111;
   --light: #F4F1EC;
-  --white: #FFFFFF;
   --grey: #666666;
 }
  
@@ -35,7 +34,7 @@ body {
   transform: translateX(-50%);
   width: 81%;
   z-index: 100;
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(0, 0, 0, 0.355);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -50,7 +49,6 @@ body {
  
 .navbar-logo {
   font-family: 'Bebas Neue', sans-serif;
-  font-weight: 900;
   font-size: 1.4rem;
   letter-spacing: 0.08em;
   color: var(--red);
@@ -65,7 +63,7 @@ body {
  
 .navbar ul li a {
   text-decoration: none;
-  color: var(--white);
+  color: #fff;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 600;
   font-size: 0.9rem;
@@ -116,19 +114,17 @@ body {
 /* Just the little ywlloe text that highlights that the sports I choice is no ordinary sport hehe */
 .hero-eyebrow {
   font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 800;
   font-style: italic;
   font-size: 1rem;
   color: var(--yellow);
   letter-spacing: 0.2em;
-  text-transform: uppercase;
   margin-bottom: 0.5rem;
 }
 
 /* This is probably what the user will see first besides the picture. I made the MOTO part white on purpose. */
 .hero-title {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(5rem, 18vw, 16rem);
+  font-size: clamp(8rem, 20vw, 16rem);
   line-height: 0.88;
   color: #fff;
 }
@@ -145,5 +141,32 @@ body {
   color: rgba(243, 243, 243, 0.7);
   margin-top: 0.3rem;
   max-width: 520px;
+}
+
+/* ── The QUOTE STRIP ── */
+.quote-strip {
+  background: var(--red);
+  padding: 4rem 8vw;
+  text-align: center;
+}
+ 
+.quote-text {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300;
+  font-size: clamp(1.3rem, 2.5vw, 2.2rem);
+  color: #fff;
+  line-height: 1.4;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quote-attr {
+  margin-top:1.2rem;
+  font-family: 'Barlow condensed', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  color: var(--yellow);
+}
 }
  
