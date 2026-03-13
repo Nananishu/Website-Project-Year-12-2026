@@ -158,6 +158,45 @@ body {
   border-radius: 4px;
 }
 
+/* The ultimate divider or STATS BAND that I think is super cool, since i havent done anything like this before. I got this idea from the official MOTOGP website */
+.stats-band {
+  background: var(--dark);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3rem 6vw;
+  gap: 1rem;
+}
+ 
+.stats-band-item {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  transition: border-color 0.3s;
+}
+
+.stats-band-item:hover {
+  border-color: var(--red);
+}
+
+.band-num {
+  display: block;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  color: var(--yellow);
+  line-height: 1;
+}
+
+.band-label {
+  display: block;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 5px;
+}
+
 
 /* ── The QUOTE STRIP ── */
 .quote-strip {
