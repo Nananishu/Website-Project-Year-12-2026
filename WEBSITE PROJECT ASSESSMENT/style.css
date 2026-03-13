@@ -97,3 +97,53 @@ body {
   background: url('images/motogpp2.jpg') center center / cover no-repeat;
   opacity: 0.45;
 }
+
+/* This is a graident effect I learnt to add to the hero picture/banner to make my text more visible! */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.1) 55%, transparent 100%);
+}
+ 
+/* I used this to align all the text where it should belong on the webpage! */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 6vw 6vw;
+  width: 100%;
+}
+
+/* Just the little ywlloe text that highlights that the sports I choice is no ordinary sport hehe */
+.hero-eyebrow {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--yellow);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+/* This is probably what the user will see first besides the picture. I made the MOTO part white on purpose. */
+.hero-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(5rem, 18vw, 16rem);
+  line-height: 0.88;
+  color: #fff;
+}
+/* The GP means Grand Prix, which is pretty significant so I used an accent feature to make it different from the rest of the MOTO */
+.hero-title .red {
+  color: var(--red);
+}
+ 
+.hero-sub {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: clamp(1rem, 2vw, 1.6rem);
+  color: rgba(243, 243, 243, 0.7);
+  margin-top: 0.3rem;
+  max-width: 520px;
+}
+ 
