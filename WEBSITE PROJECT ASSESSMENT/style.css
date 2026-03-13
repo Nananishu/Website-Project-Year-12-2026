@@ -1,287 +1,99 @@
-.Homepage {
-    min-height: 100vh;
-    margin: clamp(50px,30px,30px);
-    margin-top: clamp(60px,100px,110px);
-    background-color: #000000;
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-.Homepage-banner {
-    height: 700px;
-    background: url(images/motogpp2.jpg) no-repeat center center / cover;
-    border-radius: 20px;
+ 
+/* ── These are the variables ── */
+:root {
+  --red: #D0021B;
+  --yellow: #F5C400;
+  --dark: #111111;
+  --light: #F4F1EC;
+  --white: #FFFFFF;
+  --grey: #666666;
 }
-
-.banner-text {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center; /* use this */
-  text-align: center;
-  gap: 0
+ 
+/* ── Main base ── */
+html {
+  scroll-behavior: smooth;
 }
-
-.title {
-  background-position-y: -70px;
-  color: rgb(255, 255, 255);
-  text-shadow: 0 0 10px #000;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: clamp(4rem, 16vw, 18rem);
-  margin-top:clamp(15rem,6rem,20rem);
+ 
+body {
+  background: var(--light);
+  color: var(--dark);
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
 }
-
-.second-title{
-   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-style: italic;
-   color: #ffdd00;
-    text-shadow: 0 0 10px #000;
-    font-size: clamp(1.6rem, 4vw, 4rem);
-    margin:0;
-    margin-top:clamp(-12rem,-13rem,-16rem);
-
-} 
-
-.read-more-btn{
-  display: inline-block;
-  margin-top: 12px;
-  padding: 9px 17px;
-  background-color: #00000084;
-  font: 1.3rem #ffffff;
-  text-decoration: none;
-  border-radius: 6px;
-}
-
-.description-1{
-  color: rgb(224, 224, 224);
-  font-size: 13px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin:60px;
-  position:relative;
-  top: clamp(6rem,1rem,2rem)
-}
-.description-1{
-height:clamp(70%,80%,90%);
-width:clamp(70%, 80%,90% );
-background-color: #000000;
-padding:25px;
-border-radius: 20px;
-margin:0
-}
-
-.Riders {
-  background: url(images/background-red.jpg);
-  min-height: 150vh;
-  font-family: Arial, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  margin: 30px
-}
+ 
+/* ── The navigation bar  ── */
 .navbar {
-  margin-top: 0;
-  background-color: rgba(96, 96, 96, 0.293);
-  backdrop-filter: blur(30px);
-  padding: 1px;
   position: fixed;
-  width: 80%;
+  top: 1.5rem;
   left: 50%;
   transform: translateX(-50%);
-  top: 2rem;
-  border-radius: 30px;
-  border: 1px solid rgba(214, 214, 214, .5);
-  box-shadow: 0 6px 6px rgba(0, 0, 0, .566)
-}
-ul {
-  list-style-type: none;
+  width: 81%;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+  padding: 0 2rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
   display: flex;
-  justify-content: space-evenly
+  align-items: center;
+  justify-content: space-between;
+  height: 52px;
 }
-.nav ul li {
-  display: inline
-}
-.header,
-.under-header,
-a {
-  color: #fff;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  position: relative
-}
-a {
+ 
+.navbar-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 900;
+  font-size: 1.4rem;
+  letter-spacing: 0.08em;
+  color: var(--red);
   text-decoration: none;
-  font-size: clamp(1rem, 1.5vw, 1.8rem);
-  font-weight: 300;
-  padding: 5px;
-  transition: color .3s ease
 }
-a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 50%;
-  transition: all .5s ease;
-  background: #fff1f1;
-  border-radius: 20px;
+ 
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 0.2rem;
 }
-a:hover::after {
-  width: 100%;
-  left: 0
+ 
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 100px;
+  transition: background 0.2s, color 0.2s;
 }
-.header,
-.under-header {
-  font-size: clamp(5rem, 10vw, 12rem);
-  text-align: center;
-  top: 4rem
-}
-.under-header {
-  font-size: clamp(2rem, 2vw, 2rem);
-  top: -4rem;
-  background: rgba(255, 255, 255, .244);
-  backdrop-filter: blur(30px);
-  border-radius: 20px;
-  padding: 5px;
-  width: 50%;
-  left: 50%;
-  transform: translateX(-50%)
-}
-.under-header:hover {
-  box-shadow: 0 0 10px #360303
-}
-.card {
-  width: 300px;
-  height: 450px;
-  transform-style: preserve-3d;
-  transition: transform .8s ease-in-out;
-  cursor: pointer;
-  border-radius: 15px;
-  align-self: center;
-  margin: 80px
-}
-.card:hover {
-  transform: rotateY(180deg);
-  align-items: center;
-}
-.back-page,
-.front-page {
-  position:absolute;
-  align-items: center;
-  width: 120%;
-  height: 120%;
-  backface-visibility: hidden;
-  border-radius: 15px
-}
-.front-page {
-  background-image: url(images/marc.jpg);
-  background-size: cover
-}
-.card-info {
-  position: absolute;
-  bottom: 50px;
-  left: 45px;
+ 
+.navbar ul li a:hover {
+  background: var(--red);
   color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, .47);
-  text-align: center
-}
-.card-title,
-.inside-card h3 {
-  font-weight: 700;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif
-}
-.card-subtitle,
-.card-title {
-  text-shadow: 0 0 10px rgba(0, 0, 0, .966)
-}
-.card-title {
-  font-size: 2.5rem;
-  margin-bottom: -20px
-}
-.card-subtitle {
-  font-size: 1rem;
-  margin-bottom: -30px;
-  color: #b8d7d8;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-weight: 700;
-  padding: 2px
-}
-.back-page {
-  color: #b8b8b8;
-  align-items: center;
-  justify-content: center;
-  transform: rotateY(180deg);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, .5);
-  background: #5b140a
-}
-.inside-card {
-  text-align: center;
-  padding: 20px;
-  max-width: 300px
-}
-.inside-card h3 {
-  font-size: 3rem;
-  text-shadow: 0 0 10px #390404
-}
-.inside-card p {
-  font-size: 1rem;
-  position: center;
-  color: #fff;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif
-}
-.card-button {
-  display: inline-block;
-  padding: 10px 20px;
-  color: #000;
-  font-weight: 700;
-  border: 0;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: background-color .3s ease;
-  background: #dcdfe1
 }
 
-.History{
-    min-height: 100vh;
-    margin: clamp(50px,30px,30px);
-    margin-top: clamp(60px,100px,110px);
-    background-color: #000000;
+/* ── This is for the main hero page, what everyone will see first but its under the navbar :D  ── */
+.hero {
+  min-height: 100vh;
+  background: var(--dark);
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
 }
-
-.header-history {
- background-position-y: -70px;
-  color: rgb(255, 255, 255);
-  text-shadow: 0 0 10px #000;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: clamp(4rem, 13vw, 13rem);
-  margin-top:clamp(15rem,6rem,20rem);
-  text-align: center;
-  margin:30px;
-  margin-top:90px;
-}
-
-.History-banner {
-  height: 700px;
-  background: url(images/MOTOO.jpg) no-repeat center center / cover;
-  border-radius: 20px;
-}
-
-.history-banner-text {
+ 
+.hero-bg {
   position: absolute;
   inset: 0;
-  display: grid;
-  place-items: center; /* use this */
-  text-align: center;
-  gap: 0
-}
-
-.des-1{
-height:clamp(70%,80%,90%);
-width:clamp(70%, 80%,90% );
-background-color: #000000;
-padding:25px;
-border-radius: 20px;
-}
-
-.des-1{
-color: white;
-font-size: 13px;
-text-align: center;
-font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-top: clamp(6rem,1rem,2rem);
+  background: url('images/motogpp2.jpg') center center / cover no-repeat;
+  opacity: 0.45;
 }
